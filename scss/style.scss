@@ -1,0 +1,237 @@
+:root {
+	--Black: #000000;
+	--Neutral: #404040;
+	--White: #ffffff;
+	--Error: #ef4444;
+	--zinc100: #f4f4f5;
+	--zinc200: #e4e4e7;
+	--zinc300: #d4d4d8;
+	--zinc500: #71717a;
+	--zinc800: #27272a;
+	--standart-weight: 91.68%;
+}
+
+%org-main {
+	max-width: 1920px;
+	width: 91.68%;
+	display: flex;
+}
+
+main {
+	display: flex;
+	align-items: center;
+}
+
+.about {
+	// @extend %org-main;
+
+	// max-width: 1920px;
+	width: 91.68%;
+	display: flex;
+	// justify-content: space-between;
+	position: relative;
+	align-items: center;
+	justify-content: center;
+	gap: 20px;
+	.about__descriptions {
+		position: relative;
+		z-index: 1;
+		font-size: 16px;
+		font-family: 'Sora', sans-serif;
+		line-height: 24px;
+		color: var(--zinc500);
+		left: 5vw;
+	}
+	.person {
+		right: 5vw;
+		position: relative;
+		z-index: 2;
+	}
+}
+
+.plitki {
+	display: flex;
+	margin-top: 60px;
+	gap: 32px;
+}
+
+.skills {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	justify-items: center;
+	row-gap: 40px;
+	svg {
+		&:hover {
+			filter: invert(1);
+		}
+	}
+}
+
+.sk {
+	font-size: 48px;
+	font-family: 'Sora', sans-serif;
+	font-family: 'Sora';
+	font-style: normal;
+	font-weight: 800;
+	font-size: 48px;
+	line-height: 56px;
+	letter-spacing: -0.02em;
+}
+
+.skill_title {
+	display: flex;
+	justify-content: center;
+	margin: 60px;
+}
+
+header {
+	display: flex;
+	justify-content: center;
+	.panel {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		font-family: 'Sora', sans-serif;
+		font-size: 24px;
+		width: 91.68%;
+		height: 104px;
+		.panel__logo {
+			display: flex;
+			align-items: center;
+			font-weight: bold;
+		}
+		.panel__navigate {
+			display: flex;
+			gap: 32px;
+			a {
+				color: var(--Black);
+				&:hover {
+					color: var(--Neutral);
+					text-decoration: underline;
+					text-decoration-skip-ink: none;
+				}
+			}
+		}
+		.panel__button {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			height: 56px;
+			width: 153px;
+			font-size: 24px;
+			color: var(--White);
+			background-color: var(--Black);
+			gap: 5px;
+			border-radius: 4px;
+			&:hover {
+				filter: invert(0.3);
+				// background-color: var(--Neutral);
+			}
+			&:active {
+				filter: invert(1);
+				// background-color: var(--White);
+				// color: var(--Black);
+				// border: 3px solid #000;
+			}
+		}
+	}
+}
+
+.reviews {
+	display: flex;
+	justify-content: center;
+	position: relative;
+	width: 100%;
+	height: 450px;
+	gap: 2%;
+	margin-bottom: 60px;
+	.review {
+		display: flex;
+		background-color: var(--White);
+		box-shadow: #00000085 0px 3px 3px;
+		flex-direction: column;
+		align-items: center;
+		gap: 10%;
+		padding: 50px;
+		width: 22%;
+		border-radius: 20px;
+		p {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			font-family: 'Sora', sans-serif;
+			font-size: 18px;
+			color: var(--Neutral);
+		}
+	}
+	.black {
+		background-color: #000000;
+		p {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			font-family: 'Sora', sans-serif;
+			font-size: 18px;
+			color: var(--White);
+		}
+	}
+}
+
+.testimonial {
+	text-align: center;
+	margin: 60px;
+}
+
+footer {
+	margin-top: 200px;
+	display: flex;
+	.forms {
+		width: 50%;
+		display: flex;
+		gap: 10px;
+		flex-direction: column;
+		align-items: center;
+		form {
+			display: contents;
+			align-items: center;
+			justify-content: center;
+		}
+		input {
+			padding: 5px;
+			border-radius: 8px;
+			border: #000000 solid 2px;
+			width: 70%;
+		}
+		textarea {
+			padding: 5px;
+			border-radius: 8px;
+			border: #000000 solid 2px;
+			width: 70%;
+		}
+	}
+	.plitki {
+		width: 70%;
+	}
+	p {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		font-family: 'Sora', sans-serif;
+		font-size: 18px;
+		color: var(--Neutral);
+		width: 70%;
+	}
+}
+
+.line {
+	min-height: 2px;
+	width: 100%;
+	background-color: #000000;
+}
+
+.fot {
+	display: flex;
+	justify-content: center;
+	background-color: #000;
+}
